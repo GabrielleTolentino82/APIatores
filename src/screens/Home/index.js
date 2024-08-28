@@ -32,14 +32,13 @@ export default function HomeIndex() {
       <View style={{ width: "90%" }}>
         <FlatList
           horizontal={true}
-          showsHorizontalScrollIndicator={false}
           data={actors}
           keyExtractor={(item) => item.id.toString()}
           renderItem={({ item }) => (
             <TouchableOpacity onPress={() => navigation.navigate('Details', {
               titulo: item.name,
               imagem: item.profile_path,
-              overview: item.known_for[0]?.overview || 'Sem descrição disponível',
+              overview: item.known_for[0]?.overview,
               popularity: item.popularity,
               knownFor: item.known_for.map(film => film.title || film.name),
               gender: item.gender,
@@ -47,7 +46,7 @@ export default function HomeIndex() {
               <CardMovies
                 titulo={item.name}
                 imagem={`https://image.tmdb.org/t/p/w500${item.profile_path}`}
-                popularity={`Popularidade: ${item.popularity}`}
+                popularity={item.popularity}
                 knownFor={item.known_for.map(film => film.title || film.name)}
                 gender={item.gender}
               />

@@ -15,18 +15,25 @@ export default function Details() {
       </TouchableOpacity>
 
       <Image
-        resizeMode="cover"
+        resizeMode="stretch"
         style={styles.imageBanner}
         source={{ uri: `https://image.tmdb.org/t/p/original/${route.params?.imagem}` }}
       />
 
       <View style={styles.infoContainer}>
         <Text style={styles.textBanner}>{route.params?.titulo}</Text>
-        <Text style={styles.textInfo}>Descrição de alguns de seus trabalhos mais conhecidos:</Text>
-        <Text style={styles.textOverview}>{route.params?.overview}</Text>
-        <Text style={styles.textInfo}>Popularidade: {route.params?.popularity}</Text>
-        <Text style={styles.textInfo}>Conhecido por: {route.params?.knownFor?.join(', ')}</Text>
-        <Text style={styles.textInfo}>Gênero: {route.params?.gender === 1 ? 'Feminino' : 'Masculino'}</Text>
+        
+        <Text style={styles.textTopic}>Descrição de alguns de seus trabalhos mais conhecidos:</Text>
+        <Text style={styles.textInfo}>{route.params?.overview}</Text>
+        
+        <Text style={styles.textTopic}>Popularidade:</Text>
+        <Text style={styles.textInfo}>{route.params?.popularity}</Text>
+        
+        <Text style={styles.textTopic}>Conhecido por:</Text>
+        <Text style={styles.textInfo}>{route.params?.knownFor?.join(', ')}</Text>
+        
+        <Text style={styles.textTopic}>Gênero:</Text>
+        <Text style={styles.textInfo}>{route.params?.gender === 1 ? 'Feminino' : 'Masculino'}</Text>
       </View>
     </View>
   );

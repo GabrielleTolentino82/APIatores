@@ -5,13 +5,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#141a29',
     padding: 20,
-    alignItems: 'center', // Centraliza os itens no eixo principal
-    justifyContent: 'center', // Centraliza os itens no eixo transversal
   },
   imageBanner: {
-    width: 300, // Largura fixa
-    height: 300, // Altura igual à largura para manter a imagem quadrada
-    borderRadius: 20, // Arredondamento dos cantos
+    width: '30%',
+    height: 400,  
+    borderRadius: 20,
     marginBottom: 20,
     shadowColor: '#000',
     shadowOffset: {
@@ -21,6 +19,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+    alignSelf: 'center', 
   },
   textBanner: {
     fontSize: 30,
@@ -40,19 +39,20 @@ const styles = StyleSheet.create({
     left: 20,
     zIndex: 1,
   },
-  textOverview: {
-    fontSize: 18,
-    color: "white",
-    marginTop: 10,
-    marginBottom: 10,
-  },
   infoContainer: {
     marginTop: 20,
+    alignItems: 'flex-start',
+  },
+  textTopic: {
+    fontSize: 20,
+    color: "white",
+    fontWeight: 'bold',
+    marginTop: 10,
   },
   textInfo: {
     fontSize: 18,
     color: "white",
-    marginTop: 5,
+    marginBottom: 10,
   },
 });
 

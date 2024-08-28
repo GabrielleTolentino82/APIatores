@@ -5,16 +5,16 @@ const styles = StyleSheet.create({
 
     imageBanner:{
         width:'90%',
-        height:200,
+        height:500,
         marginTop:15,
         borderRadius:10
     },
     textBanner:{
-        fontSize:30,
-        color:'white',
-        marginTop:15,
-        marginLeft:-180,
-        fontWeight:'Bold'
+        marginTop: 10,
+        fontSize:25,
+        color:"white",
+        fontWeight:"bold",
+        marginRight:75
     }
 
 
