@@ -61,7 +61,7 @@ export default function HomeIndex() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#141a29',
+    backgroundColor: '#6959CD',
     alignItems: 'center',
   },
 });

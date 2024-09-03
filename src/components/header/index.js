@@ -8,12 +8,6 @@ export default function Header(){
 
     return(
             <View style = {styles.viewHeader}>
-
-                <TouchableOpacity>  
-
-                <Feather style ={{marginLeft:-70}} name = 'menu' size= {36} color = "#FFF" />
-
-                </TouchableOpacity>
                 
                 <Text style={styles.textHeader}>   ATORES  </Text>
             

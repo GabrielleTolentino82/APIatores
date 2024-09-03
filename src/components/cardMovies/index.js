@@ -14,10 +14,11 @@ const CardMovies = ({ titulo, imagem, popularity, knownFor, gender }) => {
 const styles = StyleSheet.create({
   card: {
     margin: 10,
-    backgroundColor: '#1e1e1e',
+    marginTop: 29,
+    backgroundColor: '#FFF',
     borderRadius: 10,
     padding: 10,
-    width: 150,
+    width: 220,
     alignItems: 'center',
   },
   image: {
@@ -26,13 +27,13 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   title: {
-    color: 'white',
+    color: 'black',
     fontSize: 16,
     fontWeight: 'bold',
     marginTop: 5,
   },
   text: {
-    color: 'white',
+    color: 'black',
     fontSize: 14,
     marginTop: 5,
   },
